@@ -1,0 +1,410 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    margin: auto;
+    display: block;
+}
+
+.header {
+    width: 100%;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background-color: rgb(153, 203, 243);
+    padding-top: 10px;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo .text {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.menu-btn {
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.menu-btn:hover {
+    background-color: rgb(81, 177, 255);
+}
+
+.nav {
+    width: 100%;
+}
+
+
+
+.nav-left, .nav-right {
+    display: none;
+}
+
+.nav:hover .nav-left, .nav:hover .nav-right {
+    display: block;
+}
+
+.nav-left ul, .nav-right ul {
+    list-style: none;
+}
+
+.nav-left a, .nav-right a {
+    padding: 10px;
+    display: block;
+    color: #000;
+    margin: 2px;
+}
+
+.nav-left a:hover, .nav-right a:hover {
+    background-color: rgb(81, 177, 255);
+}
+
+@media screen and (min-width: 560px) {
+    .header {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+        flex-direction: row;
+    }
+
+    .nav {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .nav-left, .nav-right {
+        display: block;
+    }
+
+    .logo img {
+        border-radius: 5px;
+    }
+
+    .nav-left ul, .nav-right ul {
+        display: flex;
+    }
+
+    .nav-left a, .nav-right a {
+        border-radius: 4px;
+    }
+}
+
+/* main  */
+.main {
+    margin: 50px 25px 25px 25px;
+}
+
+.main-left img {
+    width: 250px;
+    border-radius: 10px;
+    margin: auto;
+    display: block;
+}
+
+.main-right {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main-right h2 {
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 560px) {
+    .main {
+        width: 960px;
+        margin: auto;
+        display: flex;
+        margin-top: 30px;
+        justify-content: center;
+    }
+
+    .main-left img {
+        width: 400px;
+    }
+
+    .main-right {
+        margin: auto;
+        text-align: left;
+        margin-left: 30px;
+    }
+
+    .main-right h2 {
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+}
+
+.display {
+    margin-top: 30px;
+    padding-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.display .display-content {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.produk {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.produk .produk-content {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.produk .image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.produk .title {
+    font-size: 18px;
+    margin: 10px 10px;
+}
+
+.produk .deskripsi {
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+.produk .harga {
+    margin: 10px 10px;
+    font-size: 15px;
+}
+
+@media screen and (min-width: 560px) {
+
+    .display {
+        background-color: rgb(76, 168, 255);
+    }
+
+    .produk {
+    width: 100%;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+    background-color: rgb(76, 168, 255);
+    }
+
+    .produk-content {
+    width: calc(30% - 50px);
+    border: 3px solid black;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+    }
+
+    .display-content h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    }
+
+    .produk-content .image img {
+    border-radius: 15px 15px 0 0;
+    }
+}
+
+.info {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.info-content {
+    display: flex;
+    align-items: center;
+    width: 160px;
+    margin-bottom: 20px;
+}
+
+.info-content .icon {
+    width: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.info-content i {
+    font-size: 24px;
+}
+
+.info-content .info-desc {
+    margin: 0 0 0 10px;
+    font-size: 14px;
+}
+
+.info-content .info-desc h2  {
+    font-size: 16px;
+}
+
+
+@media screen and (min-width: 560px) {
+    .info {
+        margin-top: 20px;
+    }
+
+    .info-content {
+        width: 180px;
+    }
+
+    .info-content i {
+        font-size: 30px;
+    }
+    
+    .info-content .info-desc {
+        font-size: 16px;
+    }
+    
+    .info-content .info-desc h2  {
+        font-size: 20px;
+    }
+}
+
+.medsos {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.card {
+    width: auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px 15px;
+    box-shadow: 0 0 10px black;
+}
+
+.medsos-isi {
+    font-size: 16px;
+}
+
+.medsos-form {
+    display: flex;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.medsos-form form {
+    display: flex;
+    width: 100%;
+}
+
+.medsos-form form input {
+    align-items: center;
+    padding: 8px 0 8px 8px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid black;
+    border-right: none;
+    font-size: 10px;
+    background-color: rgb(160, 209, 255);
+}
+
+.medsos-form form input::placeholder {
+    color: black;
+}
+
+.medsos-form button {
+    align-items: center;
+    padding: 8px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: rgb(160, 209, 255);
+    border-radius: 0 5px 5px 0;
+    display: inline-block;
+}
+
+.medsos-icon {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.medsos-icon i {
+    font-size: 40px;
+}
+
+.footer {
+    width: 100%;
+    background-color: rgb(108, 162, 231);
+    display: flex;
+    padding: 15px;
+}
+
+.footer .identitas, .footer .sitemap, .footer .payment {
+    flex: 1;
+}
+
+.footer h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer .identitas p {
+    font-size: 14px;
+}
+
+.footer .sitemap li { 
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.footer .sitemap li a {
+    color: black;
+    font-size: 14px;
+}
+
+.footer .payment .logo-bank {
+    margin-bottom: 10px;
+}
+
+.footer .payment .logo-bank i {
+    font-size: 20px;
+}
+
+.footer .payment .bank {
+    margin-bottom: 25px;
+}
+
+.footer .payment .bank h3 {
+    font-size: 15px;
+    margin-bottom: 1px;
+}
