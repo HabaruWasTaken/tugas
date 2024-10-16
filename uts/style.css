@@ -1,8 +1,6 @@
 :root {
     --blue: rgb(22, 120, 185);
     --yellow: rgb(255, 208, 0);
-    --8rem: 8rem;
-    --4rem: 4rem;
 }
 
 * {
@@ -248,11 +246,4 @@ footer .footer {
     color: grey;
     display: flex;
     justify-content: center;
-}
-
-@media (max-width: 600px) {
-    :root {
-        --8rem: 4rem;
-        --4rem: 2rem;
-    }
 }
