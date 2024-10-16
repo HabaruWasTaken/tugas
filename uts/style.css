@@ -1,0 +1,258 @@
+:root {
+    --blue: rgb(22, 120, 185);
+    --yellow: rgb(255, 208, 0);
+    --8rem: 8rem;
+    --4rem: 4rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn {
+    margin-top: 30px;
+    background-color: var(--blue);
+    padding: 18px 25px;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.home {
+    height: 100vh;
+    background: url(./assets/img/bg-masthead.jpg) center;
+    background-size: cover;
+}
+
+.home .title {
+    font-weight: bold;
+    font-size: var(--8rem);
+}
+
+.home .subtitle {
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.sec-2 {
+    background-color: white;
+    padding: 80px 0;
+}
+
+.sec-2 .title {
+    font-size: var(--4rem);
+    font-weight: 700;
+}
+
+
+.sec-2 .subtitle {
+    font-size: 1.8rem;
+}
+
+.sec-2 .btn {
+    background-color: black;
+}
+
+.offer {
+    background-color: var(--blue);
+    color: white;
+    padding: 80px 0;
+}
+
+.offer .subtitle {
+    color: var(--yellow);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.offer .title {
+    font-size: var(--4rem);
+    font-weight: bold;
+}
+
+.offer .services {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 20px;
+}
+
+.offer .services .service {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offer .img {
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.offer .serv-title {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.offer .serv-desc {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.sec-4 {
+    height: 100vh;
+    background: url(./assets/img/bg-callout.jpg) center;
+    background-size: cover;
+}
+
+.sec-4 .title {
+    font-size: var(--4rem);
+    font-weight: bold;
+    max-width: 400px;
+    text-align: center;
+}
+
+.porto {
+    padding: 80px 0;
+}
+
+.porto .subtitle {
+    color: var(--yellow);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.porto .title {
+    font-size: var(--4rem);
+    font-weight: bold;
+}
+
+.porto .projects {
+    margin: 20px 80px 0 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+}
+
+.porto .project {
+    width: 50%;
+    height: 450px;
+    display: flex;
+    align-items: end;
+}
+
+.porto .wrapper {
+    margin: 80px;
+}
+
+.porto .project-title {
+    font-weight: bold;
+}
+
+.porto .project-desc {
+    margin-top: 10px;
+    font-size: 1.7rem;
+}
+
+.porto .project-1 {
+    background: url(./assets/img/portfolio-1.jpg);
+}
+
+.porto .project-2 {
+    background: url(./assets/img/portfolio-2.jpg);
+}
+
+.porto .project-3 {
+    background: url(./assets/img/portfolio-3.jpg);
+}
+
+.porto .project-4 {
+    background: url(./assets/img/portfolio-4.jpg);
+}
+
+.sec-6 {
+    background-color: var(--blue);
+    color: white;
+    padding: 80px 0;
+}
+
+.sec-6 .title {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.sec-6 .btns {
+    display: flex;
+    gap: 30px;
+}
+
+.sec-6 .btn-1 {
+    background-color: white;
+    color: black;
+}
+
+.sec-6 .btn-2 {
+    background-color: black;
+}
+
+footer .maps {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+footer .maps img{
+    width: 100%;
+}
+
+footer .maps .dots {
+    position: absolute;
+    bottom: -25px;
+    display: flex;
+    gap: 15px;
+}
+
+footer .dots .dot {
+    background-color: var(--blue);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+footer .footer {
+    padding: 80px 0;
+    color: grey;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    :root {
+        --8rem: 4rem;
+        --4rem: 2rem;
+    }
+}
