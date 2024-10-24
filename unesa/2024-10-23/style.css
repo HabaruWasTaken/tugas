@@ -1,0 +1,54 @@
+.card {
+    background-color: #00bfff;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: calc(25% - 40px);
+    height: 200px;
+    overflow-y: scroll;
+    display: inline-block;
+    text-align: justify;
+}
+
+.cards {
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+li {
+    display: inline-block;
+    padding: 4px 8px;
+    margin: 0 2px;
+    border: 1px solid white;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+}
+
+li:hover {
+    background-color: white;
+}
+
+li:hover a{
+    color: black;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
