@@ -1,5 +1,3 @@
-'use strict';
-
 const elToggleFunc = function (el) { 
     el.classList.toggle("active"); 
 }

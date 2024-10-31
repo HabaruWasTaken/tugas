@@ -2,7 +2,7 @@
 
     class DB {
 
-        private $host = "127.0.0.1";
+        public $host = "127.0.0.1";
         private $user = "root";
         private $password = "";
         private $database = "dbrestoran";
@@ -28,7 +28,9 @@
         }
     }
 
-    // $db = new DB;
+    DB::insertData();
+
+    $db = new DB;
     
     // echo '<br>';
 
