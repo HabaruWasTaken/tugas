@@ -7,7 +7,7 @@
 
 <h3>Kategori</h3>
 
-<table>
+<table class="table table-bordered w-50">
     <thead>
         <tr>
             <th>No</th>

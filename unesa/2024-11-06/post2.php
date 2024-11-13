@@ -1,0 +1,1 @@
+<h1>Selamat datang, <?= $_POST["nama"]; ?></h1>
